@@ -1,0 +1,15 @@
+.footerMainSection {
+  background-color: #074f57;
+  width: 100%;
+  height: 100px;
+}
+
+.copyright {
+  text-align: center;
+}
+.copyright h5 {
+  font-family: var(--font-poppins-medium);
+  color: white;
+  padding: 40px 0px;
+  font-size: 18px;
+}

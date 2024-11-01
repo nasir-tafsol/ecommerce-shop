@@ -1,0 +1,233 @@
+.productDetailSection {
+  margin-top: 80px;
+  background-color: #f8f9fa;
+  padding: 80px;
+}
+
+.productDetailSectionHeading {
+  font-family: var(--font-poppins-medium);
+  margin-bottom: 30px;
+}
+
+.productDetailMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+}
+
+.productDetailImage {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+
+.productDetailImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.productDetailBody {
+  padding: 20px;
+}
+
+.productTitle h1 {
+  font-family: var(--font-poppins-medium);
+}
+.productDescription p {
+  font-family: var(--font-poppins-regular);
+}
+
+.productPrice p {
+  font-family: var(--font-poppins-regular);
+}
+.productPrice p strong {
+  font-family: var(--font-poppins-medium);
+}
+
+.productCategory p {
+  font-family: var(--font-poppins-regular);
+}
+.productCategory p strong {
+  font-family: var(--font-poppins-medium);
+}
+.productBrand p {
+  font-family: var(--font-poppins-regular);
+}
+.productBrand p strong {
+  font-family: var(--font-poppins-medium);
+}
+
+.productDetailRelated {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.relatedProductGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+}
+
+.relatedProductGridImage {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+.relatedProductGridImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.relatedProductGridTitle h1 {
+  font-family: var(--font-poppins-medium);
+  font-size: 17px;
+}
+.relatedProductGridDescription p {
+  font-family: var(--font-poppins-regular);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+@media (max-width: 1366px) {
+  .relatedProductGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .productDetailSection {
+    padding: 40px;
+  }
+
+  .productDetailImage{
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 992px) {
+  .relatedProductGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .productDetailSection {
+    padding: 30px;
+  }
+
+  .productDetailImage{
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .relatedProductGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .productDetailSection {
+    padding: 20px;
+  }
+  .productDetailMain {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .productDetailImage {
+    display: block;
+    margin: auto;
+  }
+  .relatedProductGridImage {
+    display: block;
+    margin: auto;
+  }
+}
+
+.productInfoDetail {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 8px;
+
+  align-items: center;
+}
+.relatedProductPrice strong {
+  font-family: var(--font-poppins-medium);
+}
+.relatedProductCategory strong {
+  font-family: var(--font-poppins-medium);
+}
+
+.cardItems {
+  cursor: pointer;
+}
+
+.addToCartBtn button {
+  background-color: #074f57;
+  border: 2px solid #074f57;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.addToCartBtn button:hover {
+  background-color: #74a57f;
+  border: 2px solid #74a57f;
+  transition: all 1.5s ease;
+}
+.addToCartBtnOne a {
+  background-color: #074f57;
+  border: 2px solid #074f57;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.addToCartBtnOne a:hover {
+  background-color: #74a57f;
+  border: 2px solid #74a57f;
+  transition: all 1.5s ease;
+}
+
+/* 0B3C49 */
+.addToCart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+}
+.counterUpper {
+  background-color: #0b3c49;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.counter {
+  background-color: #0b3c49;
+  width: 80%;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.counterUpper button {
+  font-family: var(--font-poppins-medium);
+  padding: 3px 10px 3px 10px;
+  font-size: 17px;
+}
+.counter button {
+  font-family: var(--font-poppins-medium);
+  padding: 3px 10px 3px 10px;
+}
